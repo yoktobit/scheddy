@@ -1,0 +1,13 @@
+option go_package = "github.com/yoktobit/scheddy_backend";
+
+service EventService {
+    rpc createEvent(EventRequest) returns (EventResponse);
+}
+
+message EventRequest {
+    required string name = 1;
+}
+
+message EventResponse {
+    required string id = 1;
+}
