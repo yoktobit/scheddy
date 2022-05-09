@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package event;
+
+option go_package = "github.com/yoktobit/scheddy_backend/event";
+
+message NewEventRequest {
+    string name = 1;
+}
+
+message NewEventResponse {
+    string id = 1;
+    string name = 2;
+}
+
+service EventService {
+    rpc NewEvent(NewEventRequest) returns (NewEventResponse);
+}

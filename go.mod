@@ -2,7 +2,11 @@ module github.com/yoktobit/scheddy_backend
 
 go 1.17
 
-require github.com/yoktobit/gogeneral v0.1.1
+require (
+	github.com/yoktobit/gogeneral v0.1.1
+	google.golang.org/grpc v1.33.2
+	google.golang.org/protobuf v1.28.0
+)
 
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
@@ -46,8 +50,6 @@ require (
 	golang.org/x/sys v0.0.0-20210324051608-47abb6519492 // indirect
 	golang.org/x/text v0.3.4 // indirect
 	google.golang.org/genproto v0.0.0-20201110150050-8816d57aaa9a // indirect
-	google.golang.org/grpc v1.33.2 // indirect
-	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gorm.io/driver/postgres v1.1.0 // indirect
 	gorm.io/gorm v1.21.14 // indirect
